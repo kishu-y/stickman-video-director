@@ -30,6 +30,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+          npm ci --prefix skills/directing-stickman-videos
           python -m pip install numpy pillow opencv-python-headless
       - name: Initialize and render with the repository B6 skill
         run: |

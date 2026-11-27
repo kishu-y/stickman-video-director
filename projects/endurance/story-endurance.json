@@ -1,0 +1,36 @@
+{
+  "narration": "Imagine hearing ice crush your ship while you are still standing on it. That was Shackleton’s nightmare. In nineteen fifteen, Antarctic pack ice seized his ship, Endurance. The pressure eventually cracked the wooden hull. The crew abandoned ship and camped on the ice. Then the Endurance sank, leaving them with three small lifeboats. Shackleton and five others took one of those boats across eight hundred miles of ocean to find help. Every man from the ship survived. But beneath the ice, the wreck stayed hidden for more than a century. In twenty twenty-two, an underwater search vehicle found it three thousand meters down. On the stern, the name was still there. Endurance.",
+  "context": "Historical explainer. Visuals are illustrative reconstructions.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 7,
+      "text": "Imagine hearing ice crush your ship while you are still standing on it. That was Shackleton’s nightmare."
+    },
+    {
+      "start": 7,
+      "end": 14,
+      "text": "In nineteen fifteen, Antarctic pack ice seized his ship, Endurance. The pressure eventually cracked the wooden hull."
+    },
+    {
+      "start": 14,
+      "end": 22,
+      "text": "The crew abandoned ship and camped on the ice. Then the Endurance sank, leaving them with three small lifeboats."
+    },
+    {
+      "start": 22,
+      "end": 30,
+      "text": "Shackleton and five others took one of those boats across eight hundred miles of ocean to find help."
+    },
+    {
+      "start": 30,
+      "end": 38,
+      "text": "Every man from the ship survived. But beneath the ice, the wreck stayed hidden for more than a century."
+    },
+    {
+      "start": 38,
+      "end": 48,
+      "text": "In twenty twenty-two, an underwater search vehicle found it three thousand meters down. On the stern, the name was still there. Endurance."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "ratio": "9:16",
+  "native_design": "9:16",
+  "width": 720,
+  "height": 1280,
+  "shots": [
+    {
+      "id": "crack",
+      "start": 0,
+      "end": 3,
+      "composition": "Hull pressed by ice",
+      "action": "Ice jolts and splinters",
+      "camera": "Recoil from impact",
+      "transition": "Cut to explorer"
+    },
+    {
+      "id": "alarm",
+      "start": 3,
+      "end": 7,
+      "composition": "Explorer amid pressure ice",
+      "action": "Explorer recoils toward the noise",
+      "camera": "Push into face",
+      "transition": "Cut wide"
+    },
+    {
+      "id": "trap",
+      "start": 7,
+      "end": 11,
+      "composition": "Three masts locked in ice",
+      "action": "Foreground floes drift inward",
+      "camera": "Track along floes",
+      "transition": "Cut to waterline"
+    },
+    {
+      "id": "break",
+      "start": 11,
+      "end": 14,
+      "composition": "Buckled hull",
+      "action": "Pressure pushes fragments across frame",
+      "camera": "Track low",
+      "transition": "Cut to camp"
+    },
+    {
+      "id": "camp",
+      "start": 14,
+      "end": 19,
+      "composition": "Explorer with boats on ice",
+      "action": "Explorer signals evacuation",
+      "camera": "Push with gesture",
+      "transition": "Cut to sinking"
+    },
+    {
+      "id": "sink",
+      "start": 19,
+      "end": 22,
+      "composition": "Ship beneath the ice line",
+      "action": "Light recedes beneath moving floes",
+      "camera": "Tilt down",
+      "transition": "Cut to boats"
+    },
+    {
+      "id": "voyage",
+      "start": 22,
+      "end": 30,
+      "composition": "Lifeboat in open water",
+      "action": "Lifeboat pitches and advances",
+      "camera": "Track alongside",
+      "transition": "Cut to survivor"
+    },
+    {
+      "id": "survive",
+      "start": 30,
+      "end": 34,
+      "composition": "Explorer at the camp",
+      "action": "Raises hand and relaxes",
+      "camera": "Ease back",
+      "transition": "Cut underwater"
+    },
+    {
+      "id": "dark",
+      "start": 34,
+      "end": 38,
+      "composition": "Dark seabed",
+      "action": "Wreck disappears into black water",
+      "camera": "Sink toward bottom",
+      "transition": "Cut to search"
+    },
+    {
+      "id": "search",
+      "start": 38,
+      "end": 44,
+      "composition": "Search light crosses stern",
+      "action": "Beam discovers silhouette",
+      "camera": "Track beam",
+      "transition": "Cut to name"
+    },
+    {
+      "id": "name",
+      "start": 44,
+      "end": 48,
+      "composition": "Wreck stern",
+      "action": "Beam settles on stern and reveals name",
+      "camera": "Push in",
+      "transition": "End on the wreck"
+    }
+  ],
+  "cast_inventory": [
+    {
+      "id": "explorer",
+      "role": "Illustrative Ernest Shackleton",
+      "shot_ids": [
+        "alarm",
+        "camp",
+        "survive"
+      ]
+    }
+  ],
+  "caption": {
+    "profile": "eiffel-v44-portrait-archivo-black-v1",
+    "native_design": "9:16",
+    "font_family": "Archivo Black",
+    "font_file": "fonts/ArchivoBlack.ttf",
+    "font_sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+    "font_size": 47,
+    "stroke": 4,
+    "fill": "#ffffff",
+    "stroke_fill": "#171319",
+    "supersampling": 3,
+    "resample": "lanczos",
+    "anchor": "ms",
+    "side": 44,
+    "switch": "hard_cut",
+    "autoshrink": false,
+    "pop": false,
+    "baseline": 914,
+    "band": [
+      864,
+      951
+    ]
+  }
+}

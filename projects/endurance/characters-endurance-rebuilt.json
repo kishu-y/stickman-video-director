@@ -1,0 +1,14 @@
+{
+  "schema": "b6-character-registry/1",
+  "actors": [
+    {
+      "id": "explorer",
+      "package": "characters/endurance-explorer-rebuilt",
+      "views": [
+        "front",
+        "three_quarter"
+      ]
+    }
+  ],
+  "rigid_cast": []
+}

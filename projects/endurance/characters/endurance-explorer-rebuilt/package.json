@@ -1,0 +1,597 @@
+{
+  "schema": "b6-puppet/1",
+  "binding_version": 2,
+  "character_id": "explorer",
+  "views": {
+    "front": {
+      "sprites": {
+        "body": {
+          "path": "shirt.png",
+          "sha256": "641b1189d69f1330d4677f6a237d2ae7d0edc9bfe0f5dfca22f575d2674db67c",
+          "image_to_local": [
+            [
+              1,
+              0,
+              -111.0
+            ],
+            [
+              0,
+              1,
+              -10
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "head": {
+          "path": "front.png",
+          "sha256": "2cfc9803c113486d734d69d940cfd87b3f8fc3f3b56d3d0af1514c3a8cca71c4",
+          "image_to_local": [
+            [
+              1,
+              0,
+              -125.5
+            ],
+            [
+              0,
+              1,
+              -257
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "heads": {}
+      },
+      "arms": {
+        "left": {
+          "socket": [
+            -103.0,
+            94.0
+          ],
+          "exit_normal": [
+            -1,
+            0.05
+          ],
+          "lengths": [
+            83,
+            79
+          ],
+          "pole": -1,
+          "upper_angle_range_deg": [
+            99,
+            156
+          ],
+          "elbow_bend_range_deg": [
+            12,
+            72
+          ],
+          "max_ik_offset": 14,
+          "ink_width": 8.7,
+          "hand_radius": 12,
+          "cuff": {
+            "path": "cuff-left.png",
+            "sha256": "a6110a8efa88f4ecf16d49ca1fb5dae2b86a336d213cb9b98cf870bd85cad106",
+            "image_to_local": [
+              [
+                1,
+                0,
+                -111.0
+              ],
+              [
+                0,
+                1,
+                -10
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "poses": {
+            "rest": [
+              112,
+              19
+            ],
+            "reach": [
+              124,
+              28
+            ],
+            "offer": [
+              145,
+              22
+            ],
+            "receive": [
+              125,
+              25
+            ],
+            "retract": [
+              120,
+              24
+            ]
+          },
+          "outlet_segment": [
+            [
+              -108.0,
+              86.0
+            ],
+            [
+              -108.0,
+              102.0
+            ]
+          ],
+          "exit_center": [
+            -108.0,
+            94.0
+          ],
+          "layer": "front",
+          "ink_path": {
+            "mode": "continuous",
+            "sag": 5
+          }
+        },
+        "right": {
+          "socket": [
+            98.0,
+            95.0
+          ],
+          "exit_normal": [
+            1,
+            0.05
+          ],
+          "lengths": [
+            83,
+            79
+          ],
+          "pole": 1,
+          "upper_angle_range_deg": [
+            -2,
+            80
+          ],
+          "elbow_bend_range_deg": [
+            12,
+            72
+          ],
+          "max_ik_offset": 14,
+          "ink_width": 8.7,
+          "hand_radius": 12,
+          "cuff": {
+            "path": "cuff-right.png",
+            "sha256": "621040de60836bd2071df079c3a2421d497e65b1ffc754c617a9bd3d16954fb6",
+            "image_to_local": [
+              [
+                1,
+                0,
+                -111.0
+              ],
+              [
+                0,
+                1,
+                -10
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "poses": {
+            "rest": [
+              63,
+              20
+            ],
+            "reach": [
+              27,
+              63
+            ],
+            "offer": [
+              6,
+              16
+            ],
+            "receive": [
+              29,
+              29
+            ],
+            "retract": [
+              55,
+              22
+            ]
+          },
+          "outlet_segment": [
+            [
+              103.0,
+              87.0
+            ],
+            [
+              103.0,
+              103.0
+            ]
+          ],
+          "exit_center": [
+            103.0,
+            95.0
+          ],
+          "layer": "front",
+          "ink_path": {
+            "mode": "continuous",
+            "sag": 5
+          }
+        }
+      },
+      "head_anchor": [
+        0,
+        5
+      ],
+      "neck_attachment": {
+        "mount_polygon": [
+          [
+            -16,
+            4
+          ],
+          [
+            16,
+            4
+          ],
+          [
+            16,
+            10
+          ],
+          [
+            -16,
+            10
+          ]
+        ],
+        "min_overlap_fraction": 0.54,
+        "min_overlap_thickness": 2.5
+      },
+      "ink_color": "#2d2529",
+      "legs": {
+        "left": {
+          "hip": [
+            -39,
+            173
+          ],
+          "ankle": [
+            -53,
+            306
+          ],
+          "ink_width": 11,
+          "foot_size": [
+            29,
+            13
+          ]
+        },
+        "right": {
+          "hip": [
+            39,
+            173
+          ],
+          "ankle": [
+            60,
+            306
+          ],
+          "ink_width": 11,
+          "foot_size": [
+            31,
+            13
+          ]
+        }
+      }
+    },
+    "three_quarter": {
+      "sprites": {
+        "body": {
+          "path": "shirt.png",
+          "sha256": "641b1189d69f1330d4677f6a237d2ae7d0edc9bfe0f5dfca22f575d2674db67c",
+          "image_to_local": [
+            [
+              1,
+              0,
+              -111.0
+            ],
+            [
+              0,
+              1,
+              -10
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "head": {
+          "path": "three_quarter.png",
+          "sha256": "c907c68226560dc0b9ad9a2cfd778ca079ad28e3ea17fda0a00011caaecee81c",
+          "image_to_local": [
+            [
+              1,
+              0,
+              -126.0
+            ],
+            [
+              0,
+              1,
+              -259
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "heads": {
+          "shock": {
+            "path": "shock.png",
+            "sha256": "4de9f1eaf97d1a55347c56a45fb21e7ccc152c3940577c90bfb472ecc631a551",
+            "image_to_local": [
+              [
+                1,
+                0,
+                -127.5
+              ],
+              [
+                0,
+                1,
+                -268
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "arms": {
+        "left": {
+          "socket": [
+            -103.0,
+            94.0
+          ],
+          "exit_normal": [
+            -1,
+            0.05
+          ],
+          "lengths": [
+            83,
+            79
+          ],
+          "pole": -1,
+          "upper_angle_range_deg": [
+            99,
+            156
+          ],
+          "elbow_bend_range_deg": [
+            12,
+            72
+          ],
+          "max_ik_offset": 14,
+          "ink_width": 8.7,
+          "hand_radius": 12,
+          "cuff": {
+            "path": "cuff-left.png",
+            "sha256": "a6110a8efa88f4ecf16d49ca1fb5dae2b86a336d213cb9b98cf870bd85cad106",
+            "image_to_local": [
+              [
+                1,
+                0,
+                -111.0
+              ],
+              [
+                0,
+                1,
+                -10
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "poses": {
+            "rest": [
+              112,
+              19
+            ],
+            "reach": [
+              124,
+              28
+            ],
+            "offer": [
+              145,
+              22
+            ],
+            "receive": [
+              125,
+              25
+            ],
+            "retract": [
+              120,
+              24
+            ]
+          },
+          "outlet_segment": [
+            [
+              -108.0,
+              86.0
+            ],
+            [
+              -108.0,
+              102.0
+            ]
+          ],
+          "exit_center": [
+            -108.0,
+            94.0
+          ],
+          "layer": "front",
+          "ink_path": {
+            "mode": "continuous",
+            "sag": 5
+          }
+        },
+        "right": {
+          "socket": [
+            98.0,
+            95.0
+          ],
+          "exit_normal": [
+            1,
+            0.05
+          ],
+          "lengths": [
+            83,
+            79
+          ],
+          "pole": 1,
+          "upper_angle_range_deg": [
+            -2,
+            80
+          ],
+          "elbow_bend_range_deg": [
+            12,
+            72
+          ],
+          "max_ik_offset": 14,
+          "ink_width": 8.7,
+          "hand_radius": 12,
+          "cuff": {
+            "path": "cuff-right.png",
+            "sha256": "621040de60836bd2071df079c3a2421d497e65b1ffc754c617a9bd3d16954fb6",
+            "image_to_local": [
+              [
+                1,
+                0,
+                -111.0
+              ],
+              [
+                0,
+                1,
+                -10
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "poses": {
+            "rest": [
+              63,
+              20
+            ],
+            "reach": [
+              27,
+              63
+            ],
+            "offer": [
+              6,
+              16
+            ],
+            "receive": [
+              29,
+              29
+            ],
+            "retract": [
+              55,
+              22
+            ]
+          },
+          "outlet_segment": [
+            [
+              103.0,
+              87.0
+            ],
+            [
+              103.0,
+              103.0
+            ]
+          ],
+          "exit_center": [
+            103.0,
+            95.0
+          ],
+          "layer": "front",
+          "ink_path": {
+            "mode": "continuous",
+            "sag": 5
+          }
+        }
+      },
+      "head_anchor": [
+        -16,
+        10
+      ],
+      "neck_attachment": {
+        "mount_polygon": [
+          [
+            -16,
+            4
+          ],
+          [
+            16,
+            4
+          ],
+          [
+            16,
+            10
+          ],
+          [
+            -16,
+            10
+          ]
+        ],
+        "min_overlap_fraction": 0.54,
+        "min_overlap_thickness": 2.5
+      },
+      "ink_color": "#2d2529",
+      "legs": {
+        "left": {
+          "hip": [
+            -39,
+            173
+          ],
+          "ankle": [
+            -53,
+            306
+          ],
+          "ink_width": 11,
+          "foot_size": [
+            29,
+            13
+          ]
+        },
+        "right": {
+          "hip": [
+            39,
+            173
+          ],
+          "ankle": [
+            60,
+            306
+          ],
+          "ink_width": 11,
+          "foot_size": [
+            31,
+            13
+          ]
+        }
+      }
+    }
+  }
+}

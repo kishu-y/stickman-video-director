@@ -1,0 +1,58 @@
+name: Endurance B6 render
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [endurance-github-render]
+    paths:
+      - '.github/workflows/endurance-b6.yml'
+      - 'projects/endurance/**'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install rendering dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install numpy pillow opencv-python-headless
+      - name: Initialize and render with the repository B6 skill
+        run: |
+          set -euo pipefail
+          export B6_PYTHON="$(command -v python)"
+          skill=skills/directing-stickman-videos/scripts/autopilot.mjs
+          project="$RUNNER_TEMP/endurance"
+          node "$skill" init "$project" --style B6 --ratio 9:16
+          cp -a projects/endurance/. "$project/"
+          node "$skill" validate "$project" --ratio 9:16
+          node "$skill" preflight "$project" --ratio 9:16
+          node "$skill" preview "$project" --ratio 9:16 --trusted-code --seconds 48 --output outputs/github-render
+          video="$project/outputs/github-render/preview.mp4"
+          ffmpeg -v error -xerror -i "$video" -f null -
+          ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames,duration -of json "$video"
+      - name: Save the rendered MP4 and caption files
+        uses: actions/upload-artifact@v4
+        with:
+          name: Endurance-B6-github-render
+          path: |
+            ${{ runner.temp }}/endurance/outputs/github-render/preview.mp4
+            ${{ runner.temp }}/endurance/outputs/github-render/captions.srt
+            ${{ runner.temp }}/endurance/outputs/github-render/captions.vtt
+            ${{ runner.temp }}/endurance/outputs/github-render/report.json
+          if-no-files-found: error
+          retention-days: 7

@@ -36,6 +36,8 @@ jobs:
         run: |
           set -euo pipefail
           export B6_PYTHON="$(command -v python)"
+          export PYTHONDONTWRITEBYTECODE=1
+          export PYTHONPYCACHEPREFIX="$RUNNER_TEMP/b6-pycache"
           skill=skills/directing-stickman-videos/scripts/autopilot.mjs
           project="$RUNNER_TEMP/endurance"
           node "$skill" init "$project" --style B6 --ratio 9:16
